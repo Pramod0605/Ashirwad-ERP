@@ -1,0 +1,37 @@
+Front End 
+- After the search show relevant resuts 
+
+List of Vendors in Horizontal 
+left handside 
+Vendor name 
+Vendor profile (just few words)
+No Contact Number 
+
+Right Handside 
+Send Message ( This message will go to the vendor as additional message in the lead sheet)
+View Public Profile 
+
+View Public Profile Design should be done
+
+Customer App - form submission 
+
+
+
+Admin 
+Create users 
+Based on location ( city based or we can discuss)
+once assigned this location 
+
+
+Sub Admin
+Login using ID and Password
+
+1. List of leads generated 
+
+
+
+
+
+
+
+

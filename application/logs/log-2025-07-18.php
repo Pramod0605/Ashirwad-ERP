@@ -1,0 +1,33 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2025-07-18 11:00:54 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:00:59 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:01:01 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:02:03 --> Severity: Warning --> A non-numeric value encountered /home/ashir611/public_html/application/helpers/custom_helper.php 418
+ERROR - 2025-07-18 11:02:05 --> Severity: Warning --> A non-numeric value encountered /home/ashir611/public_html/application/helpers/custom_helper.php 418
+ERROR - 2025-07-18 11:02:54 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:02:54 --> Severity: Warning --> mkdir(): No such file or directory /home/ashir611/public_html/application/controllers/Student.php 843
+ERROR - 2025-07-18 11:02:55 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:23:45 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:23:49 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:23:50 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:24:06 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:24:21 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:24:27 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:24:30 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:24:30 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:34:43 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:34:49 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:34:49 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 11:35:01 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 12:23:31 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 13:00:12 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 13:00:20 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 13:00:21 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 16:06:23 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 17:14:39 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 17:14:45 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 17:14:45 --> Could not find the language line "not_generated"
+ERROR - 2025-07-18 17:14:45 --> Could not find the language line ""
+ERROR - 2025-07-18 17:14:45 --> Could not find the language line ""
+ERROR - 2025-07-18 17:14:45 --> Could not find the language line ""

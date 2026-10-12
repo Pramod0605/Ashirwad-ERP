@@ -1,0 +1,74 @@
+
+@media only screen and (max-width: 768px){
+  html,
+  body{
+  width:100%;
+  overflow-x:hidden;
+  }
+  .lms_tg-addnav1 li {
+    float: left;
+    padding: 0 3px;
+    position: relative;
+    line-height: inherit;
+    width: 30%;
+    list-style-type: none;
+}
+.lms_button {
+    padding: 7px 5px;
+    font-size: 12px;
+    margin-bottom: 11px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff !important;
+   
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+}
+.lms_tg-addnav1 {
+   
+    margin-bottom:69px;
+    margin-top: 0px;
+   
+}
+
+.lms_tg-addnav1{
+    z-index: 2;
+    color: #fff;
+    padding: 10px 0;
+    list-style: none;
+    font-size: 13px;
+    line-height: 16px;
+    position: relative;
+
+    text-transform: capitalize;
+}
+.lms_box {
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    /* padding-left: 5px; */
+    margin-left: 6px;
+    margin-bottom: 0px;
+    /* border: 1px solid #000; */
+}
+/*.lms_user {
+    color: #5f5f5f;
+    margin-top: -7px;
+    position: relative;
+    float: right;
+    padding-right: 64px;
+}*/
+.lms_grey1{position:absolute; }
+.lms_hky{position: relative !important;}
+.lms_grey p {
+    color: #a99b9b!important;
+    margin-left: 0px;
+    line-height: 6px;
+    margin-right: 13px;
+    font-size: 12px;
+}
+
+}

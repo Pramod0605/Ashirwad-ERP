@@ -1,0 +1,13 @@
+l_name,l_gender,l_dob,l_aadhar_no,l_blood_group,l_father_name,l_father_phone,l_father_email,l_father_qualification,l_mother_name,l_mother_phone,l_mother_email,l_mother_qualification,l_guradian_name,l_guardian_phone,l_guardian_email,l_phone_number,l_alternative_phone,l_primary_email_id,l_emergency_contact_no,l_email,l_nationality,l_address,l_religion,l_caste,l_sub_caste,l_mother_tongue,l_qualification,l_class,l_enrolled_course,l_elective_subjects
+Akash,NULL,NULL,,,Partap,,,,,,,,,,,9886733599,,,,Pramod0605@gmail.com,India,Banglores,,,,,,Bsc,,
+Aman,NULL,NULL,,,Partaap,,,,C,,,,,,,1,2,,,I,India,F,,,,,E,D,,
+Mohit,NULL,NULL,,,Harbhajan,,,,C,,,,,,,1,2,,,I,India,F,,,,,E,D,,
+A,NULL,NULL,,,B,,,,C,,,,,,,1,2,,,I,India,F,,,,,E,D,,
+Akash,NULL,NULL,,,Partap,,,,,,,,,,,9886733599,,,,,India,Banglore,,,,,,Bsc,,
+Pramod,NULL,NULL,,,N,,,,,,,,,,,9902087178,,,,,India,Mysure,,,,,,,,
+Prabhu,NULL,NULL,,,Sir,,,,,,,,,,,9945545100,,,,,India,Malleshwaram,,,,,,,,
+Ran,NULL,NULL,,,Partap,,,,,,,,,,,9886634799,,,,,India,Banglore,,,,,,Bsc,,
+Ran1,NULL,NULL,,,Partap,,,,,,,,,,,9886633599,,,,,India,Banglore,,,,,,Bsc,,
+Ran2,NULL,NULL,,,Partap,,,,,,,,,,,9886633799,,,,,India,Banglore,,,,,,Bsc,,
+Ran3,NULL,NULL,,,Partap,,,,,,,,,,,9886633699,,,,,India,Banglore,,,,,,Bsc,,
+N,NULL,NULL,,,F,,,,M,,,,,,,1234567890,1234567891,,,e@e.com,India,DELHI,,,,,BA,5th,,

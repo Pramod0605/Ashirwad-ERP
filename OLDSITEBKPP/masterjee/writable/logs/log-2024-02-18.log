@@ -1,0 +1,15 @@
+CRITICAL - 2024-02-18 06:41:32 --> Undefined variable $sid
+in APPPATH/Views/admin/ptm_attendance.php on line 392.
+ 1 APPPATH/Views/admin/ptm_attendance.php(392): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/cycodete/one2.in/cycode/cincharge/app/Views/admin/ptm_attendance.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/admin/include/template_main.php(5): view()
+ 6 SYSTEMPATH/View/View.php(228): include('/home/cycodete/one2.in/cycode/cincharge/app/Views/admin/include/template_main.php')
+ 7 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/Admin/Staff.php(706): view()
+10 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Staff->ptm_attendance()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

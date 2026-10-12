@@ -1,0 +1,35 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2025-10-03 05:04:36 --> 404 Page Not Found: Json/session
+ERROR - 2025-10-03 09:56:58 --> 404 Page Not Found: V4/auth
+ERROR - 2025-10-03 09:56:58 --> 404 Page Not Found: Sessions/index
+ERROR - 2025-10-03 09:56:58 --> 404 Page Not Found: Auth:signIn/index
+ERROR - 2025-10-03 09:56:58 --> 404 Page Not Found: Tokens/index
+ERROR - 2025-10-03 09:56:58 --> 404 Page Not Found: Proxy/tcp
+ERROR - 2025-10-03 09:56:58 --> 404 Page Not Found: V1/auth
+ERROR - 2025-10-03 09:56:58 --> 404 Page Not Found: V5/login
+ERROR - 2025-10-03 09:56:58 --> 404 Page Not Found: Tokens/index
+ERROR - 2025-10-03 12:47:40 --> 404 Page Not Found: V1/auth
+ERROR - 2025-10-03 12:47:40 --> 404 Page Not Found: V1/users
+ERROR - 2025-10-03 14:31:10 --> 404 Page Not Found: V1/session
+ERROR - 2025-10-03 14:31:17 --> 404 Page Not Found: Whoami/index
+ERROR - 2025-10-03 14:31:20 --> 404 Page Not Found: V1/signin
+ERROR - 2025-10-03 14:31:20 --> 404 Page Not Found: V1/signin
+ERROR - 2025-10-03 14:31:20 --> 404 Page Not Found: V1/signin
+ERROR - 2025-10-03 14:31:30 --> 404 Page Not Found: Authenticate/index
+ERROR - 2025-10-03 14:31:46 --> 404 Page Not Found: Authentication/login
+ERROR - 2025-10-03 14:31:46 --> 404 Page Not Found: Authentication/login
+ERROR - 2025-10-03 14:31:46 --> 404 Page Not Found: Authentication/login
+ERROR - 2025-10-03 14:31:46 --> 404 Page Not Found: Authentication/login
+ERROR - 2025-10-03 21:47:43 --> 404 Page Not Found: V1/auth
+ERROR - 2025-10-03 21:47:43 --> 404 Page Not Found: V1/users
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: Authentication/login
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: V1/signin
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: V1/session
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: V1/signin
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: Whoami/index
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: Authentication/login
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: Authenticate/index
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: V1/signin
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: Authentication/login
+ERROR - 2025-10-03 23:09:13 --> 404 Page Not Found: Authentication/login

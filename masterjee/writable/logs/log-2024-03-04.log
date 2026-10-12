@@ -1,0 +1,35 @@
+CRITICAL - 2024-03-04 16:44:01 --> Attempt to read property "is_active" on null
+in APPPATH/Filters/AuthGuard.php on line 19.
+ 1 APPPATH/Filters/AuthGuard.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(186): App\Filters\AuthGuard->before()
+ 3 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 16:44:04 --> Attempt to read property "is_active" on null
+in APPPATH/Filters/AuthGuard.php on line 19.
+ 1 APPPATH/Filters/AuthGuard.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(186): App\Filters\AuthGuard->before()
+ 3 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 16:44:17 --> Attempt to read property "is_active" on null
+in APPPATH/Filters/AuthGuard.php on line 19.
+ 1 APPPATH/Filters/AuthGuard.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(186): App\Filters\AuthGuard->before()
+ 3 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 16:44:24 --> Attempt to read property "is_active" on null
+in APPPATH/Filters/AuthGuard.php on line 19.
+ 1 APPPATH/Filters/AuthGuard.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(186): App\Filters\AuthGuard->before()
+ 3 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 16:44:29 --> Attempt to read property "is_active" on null
+in APPPATH/Filters/AuthGuard.php on line 19.
+ 1 APPPATH/Filters/AuthGuard.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(186): App\Filters\AuthGuard->before()
+ 3 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

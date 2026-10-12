@@ -1,0 +1,31 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2025-10-02 08:33:24 --> 404 Page Not Found: Account/auth
+ERROR - 2025-10-02 08:33:24 --> 404 Page Not Found: V1/user
+ERROR - 2025-10-02 08:33:24 --> 404 Page Not Found: V1/users
+ERROR - 2025-10-02 08:33:24 --> 404 Page Not Found: V3/users
+ERROR - 2025-10-02 08:33:24 --> 404 Page Not Found: Account/auth
+ERROR - 2025-10-02 08:33:24 --> 404 Page Not Found: Account/auth
+ERROR - 2025-10-02 08:33:24 --> 404 Page Not Found: User/login
+ERROR - 2025-10-02 08:33:24 --> 404 Page Not Found: V2/login
+ERROR - 2025-10-02 08:33:24 --> 404 Page Not Found: V1/users
+ERROR - 2025-10-02 08:33:25 --> 404 Page Not Found: Account/auth
+ERROR - 2025-10-02 10:14:26 --> 404 Page Not Found: Json/session
+ERROR - 2025-10-02 17:59:57 --> 404 Page Not Found: V1/user
+ERROR - 2025-10-02 17:59:57 --> 404 Page Not Found: Account/auth
+ERROR - 2025-10-02 17:59:57 --> 404 Page Not Found: Account/auth
+ERROR - 2025-10-02 17:59:57 --> 404 Page Not Found: V2/login
+ERROR - 2025-10-02 17:59:57 --> 404 Page Not Found: V1/users
+ERROR - 2025-10-02 17:59:57 --> 404 Page Not Found: V1/users
+ERROR - 2025-10-02 17:59:57 --> 404 Page Not Found: User/login
+ERROR - 2025-10-02 17:59:57 --> 404 Page Not Found: Account/auth
+ERROR - 2025-10-02 17:59:58 --> 404 Page Not Found: Account/auth
+ERROR - 2025-10-02 17:59:58 --> 404 Page Not Found: V3/users
+ERROR - 2025-10-02 22:32:34 --> 404 Page Not Found: Proxy/tcp
+ERROR - 2025-10-02 22:32:35 --> 404 Page Not Found: V5/login
+ERROR - 2025-10-02 22:32:35 --> 404 Page Not Found: V4/auth
+ERROR - 2025-10-02 22:32:35 --> 404 Page Not Found: Tokens/index
+ERROR - 2025-10-02 22:32:41 --> 404 Page Not Found: Sessions/index
+ERROR - 2025-10-02 22:33:51 --> 404 Page Not Found: Tokens/index
+ERROR - 2025-10-02 22:34:03 --> 404 Page Not Found: Auth:signIn/index
+ERROR - 2025-10-02 22:34:03 --> 404 Page Not Found: V1/auth

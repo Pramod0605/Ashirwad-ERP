@@ -1,0 +1,32 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2026-06-26 01:10:30 --> 404 Page Not Found: Docker-composeprodyml/index
+ERROR - 2026-06-26 01:10:30 --> 404 Page Not Found: Awsjson/index
+ERROR - 2026-06-26 01:10:30 --> 404 Page Not Found: Actuator/configprops
+ERROR - 2026-06-26 01:10:30 --> 404 Page Not Found: Keysjson/index
+ERROR - 2026-06-26 01:10:30 --> 404 Page Not Found: Env/index
+ERROR - 2026-06-26 01:10:30 --> 404 Page Not Found: Parametersyml/index
+ERROR - 2026-06-26 01:10:30 --> 404 Page Not Found: Heapdump/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: V1/config.json
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Actuator/logfile
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Docker-composeyml/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Actuator/heapdump
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Credentialsjson/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Configprops/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: V2/application.yml
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: V2/config.json
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Configjson/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Configyml/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Applicationproperties/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Appsettingsjson/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Configphp/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Credentialsjson/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Secretsjson/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Settingsyml/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Settingsjson/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Phpinfophp/index
+ERROR - 2026-06-26 01:10:31 --> 404 Page Not Found: Actuator/env
+ERROR - 2026-06-26 01:10:32 --> 404 Page Not Found: Databaseyml/index
+ERROR - 2026-06-26 01:10:32 --> 404 Page Not Found: Databasephp/index
+ERROR - 2026-06-26 01:10:32 --> 404 Page Not Found: Applicationyml/index
+ERROR - 2026-06-26 01:10:32 --> 404 Page Not Found: V1/application.yml

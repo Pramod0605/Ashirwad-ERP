@@ -1,0 +1,12 @@
+WARNING - 2024-12-18 10:43:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$loginModel is deprecated in APPPATH/Controllers/Login.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-12-18 10:43:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Login::$segments is deprecated in APPPATH/Controllers/BaseController.php on line 55.
+ 1 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-18 10:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-18 10:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

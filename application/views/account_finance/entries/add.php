@@ -1,0 +1,600 @@
+<link rel="stylesheet" href="<?= base_url() ?>backend/finance/css/mystyle.css">
+<link rel="stylesheet" href="<?= base_url() ?>backend/finance/plugins/toastr/toastr.css">
+<link rel="stylesheet" href="<?= base_url() ?>backend/finance/plugins/jquery-ui/jquery-ui.css">
+<link rel="stylesheet" href="<?= base_url() ?>backend/finance/plugins/toastr/toastr.min.js"></script>
+<script src="<?= base_url() ?>backend/finance/js/myjs.js"></script>
+<?php   
+        $input                 = $this->setting_model->getCurrentSessionName();
+        list($a, $b)  = explode('-', $input);
+        $Current_year = $a;
+        if (strlen($b) == 2) {
+            $Next_year = substr($a, 0, 2) . $b;
+        } else {
+            $Next_year = $b;
+        }
+        $year_str_month     = $Current_year . '-04-01';
+        $year_end_month     = date("Y-m-t", strtotime($Next_year . '-03-31'));
+        
+
+
+?>
+<script type="text/javascript">
+$(document).ready(function() {
+	/* javascript floating point operations */
+	var jsFloatOps = function(param1, param2, op) {
+		param1 = param1 * 100;
+		param2 = param2 * 100;
+		param1 = param1.toFixed(0);
+		param2 = param2.toFixed(0);
+		param1 = Math.floor(param1);
+		param2 = Math.floor(param2);
+		var result = 0;
+		if (op == '+') {
+			result = param1 + param2;
+			result = result/100;
+			return result;
+		}
+		if (op == '-') {
+			result = param1 - param2;
+			result = result/100;
+			return result;
+		}
+		if (op == '!=') {
+			if (param1 != param2)
+				return true;
+			else
+				return false;
+		}
+		if (op == '==') {
+			if (param1 == param2)
+				return true;
+			else
+				return false;
+		}
+		if (op == '>') {
+			if (param1 > param2)
+				return true;
+			else
+				return false;
+		}
+		if (op == '<') {
+			if (param1 < param2)
+				return true;
+			else
+				return false;
+		}
+	}
+
+	/* Calculating Dr and Cr total */
+	$(document).on('change', '.dr-item', function() {
+		var drTotal = 0;
+		$("table tr .dr-item").each(function() {
+			var curDr = $(this).prop('value');
+			curDr = parseFloat(curDr);
+			if (isNaN(curDr))
+				curDr = 0;
+			drTotal = jsFloatOps(drTotal, curDr, '+');
+			console.log($(this));
+			// console.log(curDr);
+			// console.log(drTotal);
+		});
+		$("table tr #dr-total").text(drTotal);
+		var crTotal = 0;
+		$("table tr .cr-item").each(function() {
+			var curCr = $(this).prop('value');
+			curCr = parseFloat(curCr);
+			if (isNaN(curCr))
+				curCr = 0;
+			crTotal = jsFloatOps(crTotal, curCr, '+');
+		});
+		$("table tr #cr-total").text(crTotal);
+
+		if (jsFloatOps(drTotal, crTotal, '==')) {
+			$("table tr #dr-total").css("background-color", "#FFFF99");
+			$("table tr #cr-total").css("background-color", "#FFFF99");
+			$("table tr #dr-diff").text("-");
+			$("table tr #cr-diff").text("");
+		} else {
+			$("table tr #dr-total").css("background-color", "#FFE9E8");
+			$("table tr #cr-total").css("background-color", "#FFE9E8");
+			if (jsFloatOps(drTotal, crTotal, '>')) {
+				$("table tr #dr-diff").text("");
+				$("table tr #cr-diff").text(jsFloatOps(drTotal, crTotal, '-'));
+			} else {
+				$("table tr #dr-diff").text(jsFloatOps(crTotal, drTotal, '-'));
+				$("table tr #cr-diff").text("");
+			}
+		}
+	});
+
+	$(document).on('change', '.cr-item', function() {
+		var drTotal = 0;
+		$("table tr .dr-item").each(function() {
+			var curDr = $(this).prop('value')
+			curDr = parseFloat(curDr);
+			if (isNaN(curDr))
+				curDr = 0;
+			drTotal = jsFloatOps(drTotal, curDr, '+');
+		});
+		$("table tr #dr-total").text(drTotal);
+		var crTotal = 0;
+		$("table tr .cr-item").each(function() {
+			var curCr = $(this).prop('value')
+			curCr = parseFloat(curCr);
+			if (isNaN(curCr))
+				curCr = 0;
+			crTotal = jsFloatOps(crTotal, curCr, '+');
+		});
+		$("table tr #cr-total").text(crTotal);
+
+		if (jsFloatOps(drTotal, crTotal, '==')) {
+			$("table tr #dr-total").css("background-color", "#FFFF99");
+			$("table tr #cr-total").css("background-color", "#FFFF99");
+			$("table tr #dr-diff").text("-");
+			$("table tr #cr-diff").text("");
+		} else {
+			$("table tr #dr-total").css("background-color", "#FFE9E8");
+			$("table tr #cr-total").css("background-color", "#FFE9E8");
+			if (jsFloatOps(drTotal, crTotal, '>')) {
+				$("table tr #dr-diff").text("");
+				$("table tr #cr-diff").text(jsFloatOps(drTotal, crTotal, '-'));
+			} else {
+				$("table tr #dr-diff").text(jsFloatOps(crTotal, drTotal, '-'));
+				$("table tr #cr-diff").text("");
+			}
+		}
+	});
+
+	/* Dr - Cr dropdown changed */
+	$(document).on('change', '.dc-dropdown', function() {
+		var drValue = $(this).parent().parent().next().next().children().children().prop('value');
+		var crValue = $(this).parent().parent().next().next().next().children().children().prop('value');
+
+		if ($(this).parent().parent().next().children().children().val() == "0") {
+			return;
+		}
+
+		drValue = parseFloat(drValue);
+		if (isNaN(drValue))
+			drValue = 0;
+
+		crValue = parseFloat(crValue);
+		if (isNaN(crValue))
+			crValue = 0;
+
+		if ($(this).prop('value') == "D") {
+			if (drValue == 0 && crValue != 0) {
+				$(this).parent().parent().next().next().children().children().prop('value', crValue);
+			}
+			$(this).parent().parent().next().next().next().children().children().prop('value', "");
+			$(this).parent().parent().next().next().next().children().children().prop('disabled', 'disabled');
+			$(this).parent().parent().next().next().children().children().prop('disabled', '');
+		} else {
+			if (crValue == 0 && drValue != 0) {
+				$(this).parent().parent().next().next().next().children().prop('value', drValue);
+			}
+			$(this).parent().parent().next().next().children().children().prop('value', "");
+			$(this).parent().parent().next().next().children().children().prop('disabled', 'disabled');
+			$(this).parent().parent().next().next().next().children().children().prop('disabled', '');
+		}
+		/* Recalculate Total */
+		$('.dr-item:first').trigger('change');
+		$('.cr-item:first').trigger('change');
+	});
+
+	/* Ledger dropdown changed */
+	$(document).on('change', '.ledger-dropdown', function() {
+		if ($(this).val() == "0") {
+			/* Reset and diable dr and cr amount */
+			$(this).parent().parent().next().children().children().prop('value', "");
+			$(this).parent().parent().next().next().children().children().prop('value', "");
+			$(this).parent().parent().next().children().children().prop('disabled', 'disabled');
+			$(this).parent().parent().next().next().children().children().prop('disabled', 'disabled');
+		} else {
+			/* Enable dr and cr amount and trigger Dr/Cr change */
+			$(this).parent().parent().next().children().children().prop('disabled', '');
+			$(this).parent().parent().next().next().children().children().prop('disabled', '');
+			$(this).parent().parent().prev().children().children().trigger('change');
+		}
+		/* Trigger dr and cr change */
+		$(this).parent().parent().next().children().children().trigger('change');
+		$(this).parent().parent().next().next().children().children().trigger('change');
+
+		var ledgerid = $(this).val();
+		var rowid = $(this);
+		if (ledgerid > 0) {
+			$.ajax({
+				url: '<?=base_url("finance/ledgers/cl"); ?>',
+				data: 'id=' + ledgerid,
+				dataType: 'json',
+				success: function(data)
+				{
+					var ledger_bal = parseFloat(data['cl']['amount']);
+
+					var prefix = '';
+					var suffix = '';
+					if (data['cl']['status'] == 'neg') {
+						prefix = '<span class="error-text">';
+						suffix = '</span>';
+					}
+
+					if (data['cl']['dc'] == 'D') {
+						rowid.parent().parent().next().next().next().next().children().html(prefix + "Dr " + ledger_bal + suffix);
+					} else if (data['cl']['dc'] == 'C') {
+						rowid.parent().parent().next().next().next().next().children().html(prefix + "Cr " + ledger_bal + suffix);
+					} else {
+						rowid.parent().parent().next().next().next().next().children().html("");
+					}
+				}
+			});
+		} else {
+			rowid.parent().parent().next().next().next().next().children().text("");
+		}
+	});
+
+	/* Recalculate Total */
+	$(document).on('click', 'table td .recalculate', function() {
+		/* Recalculate Total */
+		$('.dr-item:first').trigger('change');
+		$('.cr-item:first').trigger('change');
+	});
+
+	/* Delete ledger row */
+	$(document).on('click', '.deleterow', function() {
+		$(this).parent().parent().remove();
+		/* Recalculate Total */
+		$('.dr-item:first').trigger('change');
+		$('.cr-item:first').trigger('change');
+	});
+
+	/* Add ledger row */
+	$(document).on('click', '.addrow', function() {
+		var cur_obj = this;
+		$.ajax({
+			url: '<?=base_url("finance/entries/addrow/").$entrytype["restriction_bankcash"]; ?>',
+			success: function(data) {
+				console.log(data);
+				$(cur_obj).parent().parent().before(data);
+				/* Trigger ledger item change */
+				$(cur_obj).trigger('change');
+				$("tr.ajax-add .ledger-dropdown").select2({
+					width:'100%',
+					ajax: {
+					   	url: "<?= base_url("finance/entries/ledgerList/"); ?><?=$entrytypeLabel?>",
+					   	dataType: 'json',
+					   	type: "post",
+					   	delay: 250,
+					   	data: function (params) {
+						    return {
+						      	searchTerm: params.term
+					    	};
+					   	},
+					   	processResults: function (response) {
+					   		console.log(response);
+					     	return {
+					        	results: response
+					     	};
+					   	},
+					   	cache: true
+					},
+					placeholder: '<?= lang('please_select_ledger'); ?>'
+				});
+			}
+		});
+	});
+
+	/* On page load initiate all triggers */
+	$('.dc-dropdown').trigger('change');
+	$('.ledger-dropdown').trigger('change');
+	$('.dr-item:first').trigger('change');
+	$('.cr-item:first').trigger('change');
+
+	/* Calculate date range in javascript */
+	startDate = new Date(<?php echo strtotime($year_str_month) * 1000.05; ?>  + (new Date().getTimezoneOffset() * 60 * 1000));
+	endDate = new Date(<?php echo strtotime($year_end_month) * 1000.05; ?>  + (new Date().getTimezoneOffset() * 60 * 1000));
+
+	/* Setup jQuery datepicker ui */
+	$('#EntryDate').datepicker({
+		minDate: startDate,
+		maxDate: endDate,
+		dateFormat: 'YYYY-MM-DD',
+		numberOfMonths: 1,
+	});
+
+	$(".ledger-dropdown").select2({
+		width:'100%',
+		ajax: { 
+		   	url: "<?= base_url("finance/entries/ledgerList/"); ?><?=$entrytypeLabel?>",
+		   	dataType: 'json',
+		   	type: "post",
+		   	delay: 250,
+		   	data: function (params) {
+			    return {
+			      	searchTerm: params.term
+		    	};
+		   	},
+		   	processResults: function (response) {
+		   		console.log(response);
+		     	return {
+		        	results: response
+		     	};
+		   	},
+		   	cache: true
+		},
+		placeholder: '<?= lang('please_select_ledger'); ?>'
+	});
+});
+
+</script>
+
+<div class="content-wrapper">
+<!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card card-primary card-outline">
+            <div class="card-header with-border">
+              <h3 class="card-title"><?= $title; ?></h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+				<div class="entry add form">
+				<?php
+					    $dc_options = array(
+							'D' => lang('entries_views_addrow_label_dc_toby_D'),
+							'C' => lang('entries_views_addrow_label_dc_toby_C'),
+						);
+
+					echo form_open();
+
+					$prefixNumber = '';
+					$suffixNumber = '';
+
+					if ( ($entrytype['prefix'] != '') && ($entrytype['suffix'] != '')) {
+						$prefixNumber = '<div class=\'input-group\'><span class=\'input-group-addon\'>' . $entrytype['prefix'] . '</span>';
+						$suffixNumber = '<span class=\'input-group-addon\'>' . $entrytype['suffix'] . '</span></div>';
+					} else if ($entrytype['prefix'] != '') {
+						$prefixNumber = '<div class=\'input-group\'><span class=\'input-group-addon\'>' . $entrytype['prefix'] . '</span>';
+						$suffixNumber = '</div>';
+					} else if ($entrytype['suffix'] != '') {
+						$prefixNumber = '<div class=\'input-group\'>';
+						$suffixNumber = '<span class=\'input-group-addon\'>' . $entrytype['suffix'] . '</span></div>';
+					}
+					
+					echo '<div class="row">';
+					echo '<div class="col-md-4">';
+					echo '<div class="form-group">';
+					echo form_label(lang('number'), 'number');
+					$data = array(
+						'id' => "number",
+						'type' => "text",
+						'name' => "number",
+						'beforeInput' =>  $prefixNumber,
+						'afterInput' => $suffixNumber,
+						'class' => "form-control",
+						'value' => set_value('number'),
+					);
+					echo form_input($data);
+					echo "</div>";
+					echo "</div>";
+					echo '<div class="col-md-4">';
+					echo '<div class="form-group">';
+					echo form_label(lang('date'), 'date');
+					$data = array(
+						'id' => "EntryDate",
+						'type' => "text",
+						'name' => "date",
+						'class' => "form-control",
+						'value' => set_value('date'),
+					);
+					echo form_input($data);
+					echo "</div>";
+					echo "</div>";
+					echo '<div class="col-md-4">';
+					echo '<div class="form-group">';
+					echo form_label(lang('tag'), 'tag_id');
+					?>
+						<select name="tag_id" class="form-control">
+							<option value="0"><?= lang('entries_views_add_tag_first_option'); ?></option>
+							<?php foreach ($tag_options as $tag): ?>
+								<option value="<?= $tag['id']; ?>"><?= $tag['title']; ?></option>
+							<?php endforeach; ?>
+						</select>
+					<?php
+					echo "</div>";
+					echo "</div>";
+					echo "</div>";
+
+					echo '<table class="stripped extra" id="add_entries_table">';
+					/* Header */
+					echo '<tr>';
+					echo '<th>' . (lang('entries_views_add_items_th_toby')) . '</th>';
+					echo '<th>' . (lang('ledger')) . '</th>';
+					echo '<th>' . (lang('dr_amount')) . ' (₹)' . '</th>';
+					echo '<th>' . (lang('cr_amount')) . ' (₹)' . '</th>';
+					echo '<th>' . (lang('entries_views_add_items_th_narration')) . '</th>';
+					echo '<th>' . (lang('entries_views_add_items_th_cur_balance')) . ' (₹)' . '</th>';
+					echo '<th>' . (lang('entries_views_add_items_th_actions')) . '</th>';
+					echo '</tr>';
+
+					/* Intial rows */
+					foreach ($curEntryitems as $row => $entryitem) {
+						echo '<tr>';
+						if (empty($entryitem['dc'])) {
+							echo '<td><div class="form-group-entryitem">' . form_dropdown('Entryitem[' . $row . '][dc]', $dc_options, "", array('class' => 'dc-dropdown form-control')) . '</div></td>';
+						} else {
+							echo '<td><div class="form-group-entryitem">' . form_dropdown('Entryitem[' . $row . '][dc]', $dc_options, $entryitem['dc'], array('class' => 'dc-dropdown form-control')) . '</div></td>';
+						}
+						// if (empty($entryitem['ledger_id'])) {
+						?>
+							<!-- <td>
+								<div class="form-group-entryitem">
+									<select class="ledger-dropdown form-control" name="<?= 'Entryitem[' . $row . '][ledger_id]'; ?>">
+										<?php // foreach ($ledger_options as $id => $ledger): ?>
+											<option value="<?= $id; ?>" <?= ($id < 0) ? 'disabled' : "" ?> ><?= $ledger; ?></option>
+										<?php // endforeach; ?>
+									</select>
+								</div>
+							</td> -->
+							<?php
+						// } else {
+							?>
+							<!-- <td>
+								<div class="form-group-entryitem">
+									<select class="ledger-dropdown form-control" name="<?= 'Entryitem[' . $row . '][ledger_id]'; ?>">
+										<?php //foreach ($ledger_options as $id => $ledger): ?>
+											<option value="<?= $id; ?>" <?= ($entryitem['ledger_id'] == $id) ? 'selected' : "" ?> <?= ($id < 0) ? 'disabled' : "" ?> ><?= $ledger; ?></option>
+										<?php //endforeach; ?>
+									</select>
+								</div>
+							</td> -->
+							<?php
+						// }
+						?>
+						<td>
+							<div class="form-group-entryitem">
+								<select class="ledger-dropdown form-control" name="<?= 'Entryitem[' . $row . '][ledger_id]'; ?>">
+									<option></option>
+								</select>
+							</div>
+						</td>
+						<?php
+
+						if (empty($entryitem['dr_amount'])) {
+							$data = array(
+								'type' => "text",
+								'name' => 'Entryitem[' . $row . '][dr_amount]',
+								'class' =>  'dr-item form-control',
+							);
+							echo "<td><div class='form-group-entryitem'>";
+							echo form_input($data);
+							echo "</div></td>";
+						} else {
+							$data = array(
+								'value' => $entryitem['dr_amount'],
+								'type' => "text",
+								'name' => 'Entryitem[' . $row . '][dr_amount]',
+								'class' =>  'dr-item form-control',
+							);
+							echo "<td><div class='form-group-entryitem'>";
+							echo form_input($data);
+							echo "</div></td>";
+						}
+
+						if (empty($entryitem['cr_amount'])) {
+							$data = array(
+								'type' => "text",
+								'name' => 'Entryitem[' . $row . '][cr_amount]',
+								'class' =>  'cr-item form-control',
+							);
+							echo "<td><div class='form-group-entryitem'>";
+							echo form_input($data);
+							echo "</div></td>";
+
+						} else {
+							$data = array(
+								'value' => $entryitem['cr_amount'],
+								'type' => "text",
+								'name' => 'Entryitem[' . $row . '][cr_amount]',
+								'class' =>  'cr-item form-control',
+							);
+							echo "<td><div class='form-group-entryitem'>";
+							echo form_input($data);
+							echo "</div></td>";
+						}
+						$data = array(
+							'type'  => "text",
+							'name'  => 'Entryitem[' . $row . '][narration]',
+							'class' => 'form-control',
+							'value' => set_value('Entryitem[' . $row . '][narration]'),
+
+						);
+						echo "<td><div class='form-group-entryitem'>";
+						echo form_input($data);
+						echo "</div></td>";						
+						echo '<td class="ledger-balance"><div></div></td>';
+						echo '<td>';
+						echo '<span class="deleterow fa fa-trash" escape="false"></span>';
+						echo '</td>';
+						echo '</tr>';
+					}					
+					/* Total and difference */
+					echo '<tr class="bold-text">' . '<td>' . lang('entries_views_add_items_td_total') . '</td>' . '<td>' . '</td>' . '<td id="dr-total">' . '</td>' . '<td id="cr-total">' . '</td>' . '<td >' . '<span class="recalculate" escape="false"><i class="fa fa-sync"></i></span>' . '</td>' . '<td>' . '</td>' . '<td>' . '<span class="addrow" escape="false" style="padding-left: 5px;"><i class="fa fa-plus"></i></span>' . '</td>' . '</tr>';
+					echo '<tr class="bold-text">' . '<td>' . lang('entries_views_add_items_td_diff') . '</td>' . '<td>' . '</td>' . '<td id="dr-diff">' . '</td>' . '<td id="cr-diff">' . '</td>' . '<td>' . '</td>' . '<td>' . '</td>' . '<td>' . '</td>' . '</tr>';
+
+					echo '</table>';
+
+					echo '<br />';
+					echo '<div class="form-group">';
+					echo form_label(lang('entries_views_add_label_note'), 'note');
+					echo "<textarea name='notes' class='form-control' rows='2'></textarea>";
+					echo "</div>";
+					echo '<div class="form-group">';
+					echo '<label for="transaction_id">Transaction/Cheque No.</label>';
+					echo "<input type='text' name='transaction_id' class='form-control'>";
+					echo "</div>";
+				?>
+				</div>
+            </div>
+            <div class="card-footer">
+	          	<?php
+							echo form_submit('submit', lang('submit'), array('class'=>'btn btn-primary float-right'));
+							echo anchor('entries/index', lang('entries_views_add_label_cancel_btn'), array('class' => 'btn btn-danger float-right', 'style' => 'margin-right: 5px;'));
+							echo form_close();
+	          	?>
+          </div>
+          </div>
+      </div>
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	});
+	toastr.options = {
+	  "closeButton": false,
+	  "debug": false,
+	  "newestOnTop": true,
+	  "progressBar": true,
+	  "positionClass": "toast-bottom-right",
+	  "preventDuplicates": true,
+	  "onclick": null,
+	  "showDuration": "500",
+	  "hideDuration": "500",
+	  "timeOut": "2500",
+	  "extendedTimeOut": "500",
+	  "showEasing": "swing",
+	  "hideEasing": "linear",
+	  "showMethod": "slideDown",
+	  "hideMethod": "hide"
+	};
+	<?php if($this->session->flashdata('message')){ ?>
+		toastr["success"]("<?php echo $this->session->flashdata('message'); ?>", "<?php echo lang('toastr_success_heading'); ?>");
+	<?php } ?>
+
+	<?php if($this->session->flashdata('error')){  ?>
+		toastr["error"]("<?php echo $this->session->flashdata('error'); ?>", "<?php echo lang('toastr_error_heading'); ?>");
+	<?php } ?>
+
+	<?php if($this->session->flashdata('warning')){  ?>
+		toastr["warning"]("<?php echo $this->session->flashdata('warning'); ?>", "<?php echo lang('toastr_warning_heading'); ?>");
+	<?php } ?>
+	<?php if($this->session->flashdata('info')){  ?>
+		<?php if (is_array($this->session->flashdata('info'))) { ?>
+			<?php foreach ($this->session->flashdata('info') as $value) { ?>
+				toastr["info"]("<?php echo $value; ?>", "<?php echo lang('toastr_info_heading'); ?>");
+			<?php } ?>
+		<?php }else{ ?>
+			toastr["info"]("<?php echo $this->session->flashdata('info'); ?>", "<?php echo lang('toastr_info_heading'); ?>");
+		<?php } ?>
+	<?php } ?>
+	<?php if (validation_errors()) { ?>
+		<?php $errors = trim(preg_replace('/\s+/', ' ', validation_errors())); ?>
+		toastr["info"]("<?php echo $errors; ?>", "<?php echo lang('toastr_info_heading'); ?>");
+	<?php } ?>
+});
+</script>

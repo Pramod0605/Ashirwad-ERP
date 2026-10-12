@@ -1,0 +1,177 @@
+INFO - 2024-01-30 06:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 06:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 06:53:04 --> Error connecting to the database: mysqli_sql_exception: Connection timed out in /home/cycodete/one2.in/cycode/cincharge/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/cycodete/one2.in/cycode/cincharge/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/cycodete/one2.in/cycode/cincharge/app/Filters/AuthGuard.php(18): CodeIgniter\Database\BaseConnection->query()
+#4 /home/cycodete/one2.in/cycode/cincharge/system/Filters/Filters.php(186): App\Filters\AuthGuard->before()
+#5 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+#6 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/cycodete/one2.in/cycode/cincharge/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection timed out in /home/cycodete/one2.in/cycode/cincharge/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/cycodete/one2.in/cycode/cincharge/app/Filters/AuthGuard.php(18): CodeIgniter\Database\BaseConnection->query()
+#3 /home/cycodete/one2.in/cycode/cincharge/system/Filters/Filters.php(186): App\Filters\AuthGuard->before()
+#4 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+#5 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/cycodete/one2.in/cycode/cincharge/index.php(79): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-01-30 06:53:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection timed out
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Filters/AuthGuard.php(18): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Filters/Filters.php(186): App\Filters\AuthGuard->before()
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 11:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 11:42:56 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sraitmanagersrv1_p99.subject_timetable.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/cycodete/one2.in/cycode/cincharge/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/cycodete/one2.in/cycode/cincharge/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/cycodete/one2.in/cycode/cincharge/app/Models/Admin/StaffModel.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/cycodete/one2.in/cycode/cincharge/app/Controllers/Admin/Staff.php(271): App\Models\Admin\StaffModel->teachers_timetable_info_grouped_subject()
+#6 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(942): App\Controllers\Admin\Staff->homework()
+#7 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/cycodete/one2.in/cycode/cincharge/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-30 11:42:56 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sraitmanagersrv1_p99.subject_timetable.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Admin/StaffModel.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Admin/Staff.php(271): App\Models\Admin\StaffModel->teachers_timetable_info_grouped_subject()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Staff->homework()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 11:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 11:44:42 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sraitmanagersrv1_p99.subject_timetable.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/cycodete/one2.in/cycode/cincharge/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/cycodete/one2.in/cycode/cincharge/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/cycodete/one2.in/cycode/cincharge/app/Models/Admin/StaffModel.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/cycodete/one2.in/cycode/cincharge/app/Controllers/Admin/Staff.php(271): App\Models\Admin\StaffModel->teachers_timetable_info_grouped_subject()
+#6 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(942): App\Controllers\Admin\Staff->homework()
+#7 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/cycodete/one2.in/cycode/cincharge/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-30 11:44:42 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sraitmanagersrv1_p99.subject_timetable.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Admin/StaffModel.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Admin/Staff.php(271): App\Models\Admin\StaffModel->teachers_timetable_info_grouped_subject()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Staff->homework()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 11:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 11:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 12:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-30 13:01:54 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sraitmanagersrv1_p99.subject_timetable.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /home/cycodete/one2.in/cycode/cincharge/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/cycodete/one2.in/cycode/cincharge/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/cycodete/one2.in/cycode/cincharge/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/cycodete/one2.in/cycode/cincharge/app/Models/Admin/StaffModel.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/cycodete/one2.in/cycode/cincharge/app/Controllers/Admin/Staff.php(271): App\Models\Admin\StaffModel->teachers_timetable_info_grouped_subject()
+#6 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(942): App\Controllers\Admin\Staff->homework()
+#7 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/cycodete/one2.in/cycode/cincharge/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/cycodete/one2.in/cycode/cincharge/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-30 13:01:54 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sraitmanagersrv1_p99.subject_timetable.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Admin/StaffModel.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Admin/Staff.php(271): App\Models\Admin\StaffModel->teachers_timetable_info_grouped_subject()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Staff->homework()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-30 13:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 13:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 20:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 20:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-30 20:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

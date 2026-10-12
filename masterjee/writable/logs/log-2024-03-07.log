@@ -1,0 +1,18 @@
+CRITICAL - 2024-03-07 08:57:41 --> Call to a member function destroy() on null
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->logout()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-07 08:57:46 --> Call to a member function destroy() on null
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->logout()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-07 08:57:49 --> Call to a member function destroy() on null
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->logout()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

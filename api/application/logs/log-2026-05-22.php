@@ -1,0 +1,29 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2026-05-22 10:26:43 --> 404 Page Not Found: Env/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: Env/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: Envlocal/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: Envproduction/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: Envprod/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: Envbackup/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: Envold/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: Envbak/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: Envstaging/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: Envdev/index
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: V1/.env
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: V2/.env
+ERROR - 2026-05-22 16:35:43 --> 404 Page Not Found: V3/.env
+ERROR - 2026-05-22 16:35:44 --> 404 Page Not Found: Backend/.env
+ERROR - 2026-05-22 18:40:16 --> 404 Page Not Found: Envbak/index
+ERROR - 2026-05-22 18:40:16 --> 404 Page Not Found: Envdev/index
+ERROR - 2026-05-22 18:40:16 --> 404 Page Not Found: Envprod/index
+ERROR - 2026-05-22 18:40:16 --> 404 Page Not Found: V2/.env
+ERROR - 2026-05-22 18:40:16 --> 404 Page Not Found: Envstaging/index
+ERROR - 2026-05-22 18:40:16 --> 404 Page Not Found: V1/.env
+ERROR - 2026-05-22 18:40:16 --> 404 Page Not Found: V3/.env
+ERROR - 2026-05-22 18:40:17 --> 404 Page Not Found: Envbackup/index
+ERROR - 2026-05-22 18:40:17 --> 404 Page Not Found: Env/index
+ERROR - 2026-05-22 18:40:17 --> 404 Page Not Found: Envproduction/index
+ERROR - 2026-05-22 18:40:17 --> 404 Page Not Found: Envlocal/index
+ERROR - 2026-05-22 18:40:17 --> 404 Page Not Found: Envold/index
+ERROR - 2026-05-22 18:40:18 --> 404 Page Not Found: Backend/.env

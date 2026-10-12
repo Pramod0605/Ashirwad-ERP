@@ -1,0 +1,28 @@
+CRITICAL - 2024-03-14 10:24:11 --> Call to a member function destroy() on null
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->logout()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 11:18:12 --> Call to a member function destroy() on null
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->logout()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-14 11:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-14 11:18:45 --> Call to a member function destroy() on null
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->logout()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-14 11:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-14 11:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-14 11:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-14 11:58:44 --> Call to undefined function App\Controllers\delete_cookie()
+in APPPATH/Controllers/Login.php on line 88.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->logout()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(80): CodeIgniter\CodeIgniter->run()

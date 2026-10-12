@@ -1,0 +1,137 @@
+/* Reset padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Use Google Font for beautiful typography */
+body {
+    font-family: 'Roboto', sans-serif; /* Default font */
+}
+
+/* Certificate container */
+.tc-container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 2%;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+/* Background image */
+.tc-background-page {
+    background-image: url('../uploads/certificate/1732282553-168902214674088b97530a!certificate.jpg');
+    background-size: 100% 100%; /* Stretch to cover the entire page */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Table cells */
+.tc-container tr td {
+    vertical-align: bottom;
+}
+
+/* Header text formatting */
+.tc-container tr td h1,
+.tc-container tr td h2,
+.tc-container tr td h3 {
+    margin-top: 0;
+    font-weight: normal;
+    font-family: 'Playfair Display', serif; /* Elegant font for headings */
+}
+
+/* Header, Content, and Footer fixed heights */
+.tc-header-left,
+.tc-header-center,
+.tc-header-right {
+    position: relative;
+    text-align: left;
+    height: 250px; /* Set header height */
+}
+
+.tc-header-center {
+    text-align: center;
+}
+
+.tc-header-right {
+    text-align: right;
+}
+
+.tc-content {
+    position: relative;
+    text-align: center;
+    font-size: 16px; /* Slightly larger font for the body */
+    line-height: 28px; /* Increase line height for readability */
+    padding: 20px;
+    padding-top: 80px;
+}
+
+/* Content width */
+.tc-container table {
+    width: 100%;
+    max-width: 800px; /* Ensure it doesn't overflow */
+    margin: 0 auto;
+}
+
+/* Footer styles */
+.tc-footer-left,
+.tc-footer-center,
+.tc-footer-right {
+    position: relative;
+    text-align: left;
+    height: 150px; /* Set footer height */
+}
+
+.tc-footer-center {
+    text-align: center;
+}
+
+.tc-footer-right {
+    text-align: right;
+}
+
+/* Highlight name, course, date, and category */
+.highlight {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2C3E50; /* Dark color for contrast */
+}
+
+/* Special styling for key info */
+.highlight-name {
+    color: #E74C3C; /* Red for the name */
+    font-size: 20px;
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+}
+
+.highlight-course {
+    color: #3498DB; /* Blue for course name */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.highlight-date,
+.highlight-category {
+    color: #2ECC71; /* Green for date and category */
+    font-size: 18px;
+}
+
+/* Footer */
+.tc-footer-left,
+.tc-footer-center,
+.tc-footer-right {
+    font-size: 14px; /* Smaller footer text */
+    line-height: 20px;
+    color: #7F8C8D; /* Light grey footer text */
+}
+
+/* Add more space between elements for better readability */
+.tc-content p {
+    margin-bottom: 20px;
+}
